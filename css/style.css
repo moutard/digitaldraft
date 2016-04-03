@@ -6,52 +6,46 @@
   padding:0px;
 }
 body{
-
-  color: #fff;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight:normal;
 }
 
 a{
-  color: #4bafd4;
+  color:#4bafd4;
 }
 
 a:visited{
-  color: #4bafd4;
+  color:#4bafd4;
 }
+
 /*************************
   HEADER
 **************************/
-
 header{
-  height: 30px;
-  width: 100%;
-  
-  background: rgb(40,40,40);
-  
-}
-article{
-  width: 930px;
-  padding: 0 0 0 20px;
-  margin:auto;
-  
+  height:30px;
+  width:100%;
+  background:rgb(40,40,40);
 }
 
-#visitCard {
-	height: 80px;
-	padding-top: 20px;
+article{
+  width:930px;
+  margin:auto;
+}
+
+#visitCard{
+	height:80px;
+	margin:20px 0 20px 0;
 }
 
 #visitCard a{
 	display:block;
-	float: right;
-	width: 60px;
-	margin: 0px 10px 0 10px;
-	color: rgb(102,102, 102);
+	float:right;
+	margin:0px 10px 0 10px;
+	color:rgb(102,102, 102);
 }
 
 #visitCard a:hover{
-	color: rgb(75,175, 212);	
+	color:rgb(75,175, 212);
 }
 
 #visitCard img{
@@ -60,26 +54,22 @@ article{
 	height:40px;
 }
 
-
 #visitCard h1{
   float:left;
-  margin: 0px 40px 20px 0px;
-  
-  font-family: Bebas;
-  font-size: 3em;
-  color: rgb(40,40,40);
+  margin:0px 40px 20px 0px;
+  font-family:Bebas;
+  font-size:3em;
+  color:rgb(40,40,40);
 }
 
 #visitCard h3{
 	display:block;
-	width: 60px;
-	
-	font-size: 1em;
+	font-size:1em;
 	font-weight:normal;
-	margin: auto;
-	margin-top: 5px;
-	text-align: center;
-	line-height: 10px;
+	margin:auto;
+	margin-top:5px;
+	text-align:center;
+	line-height:10px;
 }
 
 #visitCard .mail:hover{ color: rgb(212, 152, 75);}
@@ -88,18 +78,19 @@ article{
 #visitCard .github:hover{ color: rgb(212, 75, 117);}
 
 article .bar{
-  float: right;
-  height: 15px;
-  width: 60%;
-  margin-top: 35px;
-  background: rgb(40,40,40);
+  float:right;
+  height:15px;
+  width:60%;
+  margin-top:35px;
+  background:rgb(40,40,40);
 }
+
 /*************************
   PROJECTS
 **************************/
 #projects{
   width:100%;
-  
+  color:#fff;
 }
 
 .column{
@@ -110,29 +101,24 @@ article .bar{
 
 .column .project{
   position:relative;
-  width: 300px;
-  //height: 200px;
-  margin: 0px 0px 10px 0px;
-  
+  width:300px;
+  margin:0px 0px 10px 0px;
   overflow:hidden;
 }
+
 .column img{
   display:block;
   position: absolute;
   top:0px;
-  width: 300px;
-  
-  //padding: 0px;
+  width:300px;
   z-index:0;
 }
 
 .column .rectangle{
-  position: absolute;
-  width: 100%;
-  
+  position:absolute;
+  width:100%;
   z-index:1;
-    
-  background: #333;
+  background:#333;
   opacity: 0.9;
   -webkit-transition: all 0.8s ease-in;
   -moz-transition: all 0.8s ease-in;
@@ -152,16 +138,13 @@ article .bar{
 .rectangle h3{
   display:block;
   color: #fff;
-  
   line-height:18px;
   font-weight: normal;
   font-size: 18px;
-  
   margin: 10px 5px 15px 8px ;
 }
 
 .rectangle p{
-
   font-size: 15px;
   font-weight: normal;
   margin: 0px 5px 0px 8px ;
@@ -171,20 +154,14 @@ article .bar{
   width: 300px;
   height: 200px;
   margin: 0 0 10px 0;
-  font-size: 0.9em;
+  font-size: 1em;
   color: rgb(0,0,0);
-  
-  //font-family: calibri;
 }
 
 #about h2{
   border-bottom: 1px #000 solid;
   margin: 0 0 10px 0;
-  
-  
 }
-
-/**/
 
 .small{
   height: 200px;
@@ -193,56 +170,51 @@ article .bar{
 .big{
   height: 410px;
 }
+
 /*************************
   LABS
 **************************/
-#labs{
-  
-}
-
 #labs h2{
-
-  font-family: Bebas;
-  font-size: 1.65em;
+  font-family:Bebas;
+  font-size:1.65em;
 }
+
 /*************************
   FOOTER
 **************************/
+footer {
+  height:70px;
+  width:100%;
 
-footer{
-  height: 70px;
-  width: 100%;
-  
-  background: rgb(40,40,40);
-  padding-top: 20px;
-  font-size: 0.8em;
+  background:rgb(40,40,40);
+  padding-top:20px;
+  font-size:0.8em;
+  color:#fff;
 }
 
 footer #credits{
-	width: 930px;
-	margin: auto;
-	text-align: center;
+	width:930px;
+	margin:auto;
+	text-align:center;
 }
 /*************************
   CLEARFIX
 **************************/
 .clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0;
 }
- 
+
 .clearfix {
 	display: inline-block;
 }
-
 /*************************
   BOOTSTRAP
 **************************/
-
 .modal-body{
   color: #404040;
 }

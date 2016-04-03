@@ -5,10 +5,7 @@
 	<title>Raphaël Moutard</title>
 
 
-  <link rel="stylesheet" type="text/css" media="screen" href="lib/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<link rel="shortcut icon" type="image/png" href="/images/favicon-16.png">
+ 	<link rel="shortcut icon" type="image/png" href="/images/favicon-16.png">
 
 	<!--[if IE]>
 		<script>
@@ -30,7 +27,7 @@
 		<article>
 
 		<div id="visitCard">
-			<h1>Raphaël Moutard </h1> <!--<div class="bar"></div>-->
+			<h1>Raphaël Moutard</h1>
 			<a href="https://github.com/moutard/Labs" class="github">
 				<img src="images/github.png" alt="mail"/>
 				<h3>Clone me</h3>
@@ -297,58 +294,79 @@ Learning to work on very complex machine learning problems, with the highest sta
 
 
 		<footer>
-			<!-- Modal popup appearing when we click on the about link. -->
-			<div id="about-modal" class="modal hide fade">
-				<div class="modal-header">
-					<a href="#" class="close">×</a>
-					<h3>Photos Credits</h3>
-				</div>
-				<div class="modal-body">
-					<p>
-						Winner of Open Data Campus : This photo belongs to Etalab, Premier ministre's photostream.
-						<a href="http://www.flickr.com/photos/71579099@N05/6481388331/in/photostream/">see the original</a><br/>
-
-						Software engineer at LTU : This photo belongs to Nico Piotto.
-						<a href="http://www.flickr.com/photos/casino_totale/">see the original</a><br/>
-
-						Trip in New York : This photo belongs to SXC
-						<a href="http://www.sxc.hu/txt/license.html">see license for this photo</a><br/>
-
-						Expo Shanghai 2010 : This photo belongs to le niners, and is under creative common license.
-						<a href="http://www.flickr.com/photos/35971282@N00/4741065634/">see the original</a><br/>
-
-						Student at TELECOM ParisTech : This logo belongs to TELECOM ParisTech
-						<a href="http://www.telecom-paristech.fr/">see the original</a><br/>
-
-						Study trip in Korea : This photo belongs to Raphael Moutard.
-						No Modification allowed <br/>
-
-						Avignon Festival : This photo belongs to N. Constant. It's under private license. Usage restricted to members of "Les Flibustiers de l'imaginaire"
-						<a href="http://photo.nicolas-constant.com/">see the original</a><br/>
-
-						Open Data : This photo belongs to Raphael Moutard and is under creative common license.
-						<br/>
-
-						Ray Tracer : This photo belongs to Raphael Moutard and is under creative common license.
-						<br/>
-
-						Color Transfert : This photo belongs to Raphael Moutard and is under creative common license.
-						<br/>
-
-
-					</p>
-				</div>
-			</div>
 			<div id="credits">
 			Developed and Designed by Raphaël Moutard <br/>
-			<a id="help_button"  data-controls-modal="about-modal" data-backdrop="backdrop">See photos Credits</a>
+			<a id="help_button" data-toggle="modal" data-target="#myModal">See photos Credits</a>
 			</div>
 		</footer>
 
-    <script src="lib/jquery-1.7.1.min.js"></script>
-	  <script type="text/javascript" src="lib/bootstrap-twipsy.js"></script>
-	  <script type="text/javascript" src="lib/bootstrap-modal.js"></script>
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Photos Credits</h4>
+        </div>
+        <div class="modal-body">
+            <p>
+              Winner of Open Data Campus : This photo belongs to Etalab, Premier ministre's photostream.
+              <a href="http://www.flickr.com/photos/71579099@N05/6481388331/in/photostream/">see the original</a><br/>
+
+              Software engineer at LTU : This photo belongs to Nico Piotto.
+              <a href="http://www.flickr.com/photos/casino_totale/">see the original</a><br/>
+
+              Trip in New York : This photo belongs to SXC
+              <a href="http://www.sxc.hu/txt/license.html">see license for this photo</a><br/>
+
+              Expo Shanghai 2010 : This photo belongs to le niners, and is under creative common license.
+              <a href="http://www.flickr.com/photos/35971282@N00/4741065634/">see the original</a><br/>
+
+              Student at TELECOM ParisTech : This logo belongs to TELECOM ParisTech
+              <a href="http://www.telecom-paristech.fr/">see the original</a><br/>
+
+              Study trip in Korea : This photo belongs to Raphael Moutard.
+              No Modification allowed <br/>
+
+              Avignon Festival : This photo belongs to N. Constant. It's under private license. Usage restricted to members of "Les Flibustiers de l'imaginaire"
+              <a href="http://photo.nicolas-constant.com/">see the original</a><br/>
+
+              Open Data : This photo belongs to Raphael Moutard and is under creative common license.
+              <br/>
+
+              Ray Tracer : This photo belongs to Raphael Moutard and is under creative common license.
+              <br/>
+
+              Color Transfert : This photo belongs to Raphael Moutard and is under creative common license.
+              <br/>
+
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script
+			  src="https://code.jquery.com/jquery-2.2.2.min.js"
+			  integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
+			  crossorigin="anonymous"></script>
+
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/index.js"></script>
+
+
 	</body>
 
 </html>
