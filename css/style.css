@@ -88,7 +88,7 @@ article .bar{
 /*************************
   PROJECTS
 **************************/
-#projects{
+#projects, #labs{
   width:100%;
   color:#fff;
 }
