@@ -1,0 +1,65 @@
+title:            Raphael Moutard
+tagline:          Professeur de theatre et d'improvisation.
+description:      Blog sur l'improvisation.
+canonical: http://moutard.co.uk
+
+# Owner/author information
+owner:
+  name:           Raphael Moutard
+  avatar:         avatar.png
+  bio:            "Ingenieur et professeur de theatre."
+  email:          me@moutard.co.uk
+  twitter:        digital_draft
+  github:         moutard
+  #instagram:
+  #dribbble:
+  #disqus:         balzac
+  location:       "London, UK"
+
+tools:
+  standards:      "HTML, SCSS, Jekyll"
+  software:       "git"
+
+# Open Graph customization
+opengraph:
+  locale:           fr_FR
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: A Propos
+    url: /about
+  - title: Blog
+    url: /blog
+  - title: Linkedin
+    url: https://www.linkedin.com/in/raphaelmoutard
+    external: true
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/London
+future:      true
+highlighter: pygments
+markdown:    kramdown
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+  coderay:
+    coderay_line_numbers:
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+sass:
+    style: :compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
