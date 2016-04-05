@@ -2,6 +2,8 @@ title:            Raphaël Moutard
 tagline:          Professeur de theatre et d'improvisation.
 description:      Blog sur l'improvisation.
 canonical: http://moutard.co.uk/impro
+url: "http://moutard.co.uk"
+baseurl: "/impro" # the subpath of your site, e.g. /blog
 
 # Owner/author information
 owner:
